@@ -28,7 +28,7 @@ class livrosFormRequest extends FormRequest
             'autor' => 'required|max: 100|min: 1',
             'data_lancamento' => 'required|date',
             'editora' => 'required|max: 100|min: 1',
-            'sinopse' => 'required|max: 1000|min: 200',
+            'sinopse' => 'required|max: 1000|min: 1',
             'genero' => 'required|max: 100|min: 1',
             'avaliacao' => 'max: 1000|min: 1',
         ];
@@ -61,7 +61,7 @@ class livrosFormRequest extends FormRequest
 
             'sinopse.required' => 'o campo sinopse é obrigatório',
             'sinopse.max' => 'o campo sinopse deve conter, no máximo, 1000 caracteres',
-            'sinopse.min' => 'o campo sinopse deve conter, no mínimo, 200 caracteres',
+            'sinopse.min' => 'o campo sinopse deve conter, no mínimo, 1 caracteres',
 
             'genero.required' => 'o campo genero é obrigatório',
             'genero.max' => 'o campo genero deve conter, no máximo, 100 caracteres',

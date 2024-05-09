@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Route;
 Route::post('livros/cadastro', [LivrosController::class, 'CadastroLivros']);
 
 // Pesquisar título de livros
-Route::post('livros/pesquisar', [LivrosController::class, 'PesquisarPorTituloLivro']);
+Route::post('livros/pesquisartitulo', [LivrosController::class, 'PesquisarPorTituloLivro']);
 
 // Retornar livros
-Route::get('livros/retornar', [LivrosController::class, 'RetornarTodosLivros']);
+Route::get('livros/visualizar', [LivrosController::class, 'RetornarTodosLivros']);
 
 // Deletar livros
 Route::delete('livros/delete/{id}', [LivrosController::class, 'DeletarLivro']);
