@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Http\Requests\LivrosFormRequest;
 use App\Http\Requests\livrosFormRequest as RequestsLivrosFormRequest;
 use App\Http\Requests\LivrosFormRequestUpdate;
@@ -38,7 +36,7 @@ class LivrosController extends Controller
             ]);
         }
         return response()->json([
-            'status' => false,
+            'status' => true,
             'message' => 'Não há resultados para pesquisa.'
         ]);
     }
