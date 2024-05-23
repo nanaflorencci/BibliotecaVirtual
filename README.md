@@ -27,6 +27,10 @@ code .
 ```
 php artisan migrate
 ```
+7. Ligar o server:
+```
+php artisan serve
+```
 
 ## Licença
 ```
